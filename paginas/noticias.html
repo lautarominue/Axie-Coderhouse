@@ -6,95 +6,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axie origin</title>
     <link rel="icon" href="../resources/icon/icono.png">
+    <!--estilos bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Estilos propios-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
 </head>
-<body class="imagen__fondo">
-    <!--contenido-->
-    <!--menu de navegacion-->
-  <header>
-    <nav class="menu">
-        <div>
-         <a class="nav" href="../index.html"><img src="../resources/icon/icono.png" class="logo" alt="logo home"></a>
-         <span></span> 
-        </div> 
-        <div class="div2">
-         <a href="../paginas/noticias.html" class="boton__nav nav hover">Noticias</a>
-         <a href="../paginas/contacto.html" class="boton__nav nav hover">Contacto</a>
-         <a href="../paginas/cartas.html" class="boton__nav nav hover">Cartas</a>
-         <a href="../paginas/axies.html" class="boton__nav nav hover">Axies</a>
-         <a href="../paginas/modosdejuego.html" class="boton__nav nav hover">Modos de juego</a>
-        </div>  
-     </nav>
- 
-     <section class="nav__mobile">
-       
-         <div>
-           <a class="nav__mobile__icons" href="../paginas/noticias.html">
-             <span class="material-icons-outlined icon">
-                 newspaper
-               </span>
-               <p>News</p>
-           </a>
-         </div>
-         <div>
-           <a class="nav__mobile__icons" href="../paginas/contacto.html">
-           <span class="material-icons-outlined">
-               person
-             </span>
-             <p>Contact</p>
-           </a>
-         </div>
-         <div>
-           <a class="nav__mobile__icons" href="../paginas/cartas.html">
-           <span class="material-icons-outlined">
-               recent_actors
-             </span>
-             <p>Cards</p>
-           </a>  
-         </div>
-         
-         <div>
-           <a class="nav__mobile__icons" href="../paginas/axies.html">
-           <span class="material-icons-outlined">
-               flutter_dash
-             </span>
-             <p>Axies</p>
-           </a>  
-         </div>
-         <div>
-           <a class="nav__mobile__icons" href="../paginas/modosdejuego.html">
-           <span class="material-icons-outlined">
-               sports_esports
-             </span>
-             <p>Games</p>
-           </a>  
-         </div>
-       </section>
-  </header>    
-<br>
-<section style="margin-bottom: 100px;" class="container">
-    <article>
-        <h3 class="subtitulo__not">Ultimas novedades</h3>   
-        <p class="p__not">
-            La temporada 20 de Axie Infinity dio inicio este 9 de febrero y con ello entraron en vigencia los cambios anunciados hace algunos días, que parecen estar impulsando el alza del precio del SLP en el mercado.Los servidores del juego entraron en mantenimiento por dos horas sin que hubiera un anuncio previo sobre el inicio de la nueva temporada o season 20. Sin embargo, los fanáticos del juego en redes sociales como Twitter y Discord veían venir la llegada de esta nueva etapa.
-            Luego de dos horas de mantenimiento, se anunciaba el inicio oficial de la vigésima temporada de Axie Infinity en el canal de Discord del videojuego. Con ella, entraron en vigencia una serie de cambios en la dinámica del juego.
-        </p>
-        <h3 class="subtitulo__not">¿Que es axie infinity?</h3>
-        <p class="p__not">
-            Axie Infinity es uno de los títulos más exitosos y de mayor renombre entre los juegos basados en tecnología blockchain, y lo es por su propuesta de juego y por la fórmula mediante la cual los usuarios están generando ingresos a través de él.
-            Para resumirlo de forma entendible, el título se basa en reunir a los mejores Axies, criaturas que luego podemos usar para combatir contra otros jugadores o contra la IA del juego.
-            Con un formato a lo Pokémon y un estilo visual familiar, la idea es la de poder criar y mejorar nuestras criaturas y conseguir recompensas en forma de tokens que luego podemos cambiar por dinero real.
-        </p>
-    </article>
-<article>
-    <img src="../img/birdizq.png" class="bird__left" alt="bird foto">
-    <img src="../img/birder.png" alt="bird foto derecha" style="float: right;">
-</article>
-</section>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../resources/icon/icono.png" class="logo" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active hover" aria-current="page" href="./noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active hover" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Axies
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./planta.html">Planta</a></li>
+                <li><a class="dropdown-item" href="./bestia.html">Bestia</a></li>
+                <li><a class="dropdown-item" href="./pajaro.html">Pajaro</a></li>
+                <li><a class="dropdown-item" href="./acuatico.html">Acuatico</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active hover" href="./modosdejuego.html">Modos de juego</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  <!--fin navbar-->
+<!--inicio album-->
+<div class="album py-5 bg-light">
+  <div class="container" style="margin-bottom: 100px;">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">Axie Infinity: Origin (Battles V3) se acerca, informó la compañía que administra el conocido "juego para ganar dinero". Contará con nuevas interfaces, mecánicas de juego, arte, efectos especiales, argumentos y una amplia experiencia de incorporación. Origin se ha construido desde cero para ser más accesible para una audiencia mayoritaria. La adición de 3 Axies de inicio gratuitos hará que sea mucho más fácil reclutar a sus amigos y familiares para que se unan a nuestra comunidad.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">24 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">El precio de Axie Infinity (CRYPTO: AXS) ha bajado un 4,28% en las últimas 24 horas hasta los 55,18 dólares, continuando así la tendencia bajista que siguió la semana pasada de un -14,00%, pasando de los 64,06 dólares a su precio actual.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">48 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">El mercado de Token No Fungibles (NFT, por sus siglas en inglés) crece a pasos agigantados ante el auge del metaverso y la popularidad que han adquirido las criptomonedas durante los últimos años.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">10 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">Axie Infinity: Origin, también conocido como Battles V3, es un nuevo sistema de batalla que contará con un combate de ritmo rápido. La actualización estaba programada para lanzarse hoy, pero el equipo pospuso la fecha de lanzamiento hasta el 7 de abril.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">1 hr</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">Llamada “ears”, la colección cuenta con 36 cartas nuevas. Sin embargo, según Sky Mavis, la empresa responsable del juego, puede haber cambios “basados ​​en los comentarios de la comunidad y los datos que hemos recopilado sobre el poder relativo”.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">En Origin, se introducirán nuevos mecanismos en relación con el juego, con la inserción de nuevos Axies y la quema de tokens Smooth Love Potion (SLP). La versión alfa estará destinada solo para tests de la comunidad, y la fecha de lanzamiento oficial no se anunciará en este momento.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">32 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">No holdiar slp.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">20 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">Slp sufre una caida del 30%</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">60 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="../img/axiemini.jpg" alt="">
+
+          <div class="card-body">
+            <p class="card-text">Se espera una subida de 20% del slp en los proximos meses</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">2 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--fin de album-->  
 <!--inicio de footer-->
 <footer>
     <div>
@@ -108,7 +221,8 @@
         
 </footer>
 
-
+<!--script bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
