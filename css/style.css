@@ -76,7 +76,7 @@ footer{
     position: absolute;
     width: 100%;
     bottom: 0;
-    background-image: linear-gradient(to top, #ef85ef , #8d5cf7);
+    background-image: linear-gradient(to top, #3942b5 , #ffffff);
 }
 
 html {
@@ -122,11 +122,13 @@ footer div a{
         display: none;
     }
     
-    
-    /* contacto */
-    
     .cuadro__form{
         margin-bottom: 100px;
+    }
+
+    @keyframes tituloaxies {
+        0% { opacity: 0;}
+        100% {opacity: 1;}
     }
 
     
